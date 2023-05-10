@@ -1,0 +1,122 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color:white;
+}
+body{
+    background-color: rgb(32,32,32);
+}
+button{
+    cursor: pointer;
+}
+body>header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5em 1em;
+}
+body>header button{
+    margin-left:3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border:0;
+    outline: none;
+    box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.2);
+    padding:0.2em;
+    border-radius: 50%;
+    font-size: 1.5em;
+    transition: 0.2s background-color;
+
+}
+.input-box{
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.2);
+    padding:0.5em;
+    background-color: rgb(42,42,42);
+    width:100%;  
+    /* width:clamp(300px, 100%, 400px) ; */
+    position: fixed;
+    bottom:0;
+    left:0;
+
+}
+.input-box>.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs>*{
+    margin:0.5em;
+}
+.inputs>nav{
+    display: flex;
+}
+.inputs input{
+    font-size: 1em;
+    background-color: transparent;
+    outline: none;
+    border:0;
+    border-bottom: 1px solid white;
+    color:white;
+}
+.inputs button{
+    width:100%;
+    margin:0.5em;
+    background-color: transparent;
+    outline:none;
+    border:0;
+    padding:0.3em;
+    font-size: 1em;
+}
+.inputs button:hover{
+    background-color: rgb(148, 255, 113);
+    color:black;
+}
+.list{
+    padding:1em;
+    overflow-y: auto;
+    height:60vh;
+}
+.item{
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.2);
+    padding:1em;
+    display: flex;  
+    flex-direction: column;  
+    border-radius: 1em;
+    width:clamp(300px, 100%, 400px);
+    margin-top:1em;
+    background-color: rgb(42,42,42);
+}
+.item>.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item>.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border:0;
+    outline: none;
+    box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.2);
+    padding:0.2em;
+    border-radius: 50%;
+    font-size: 1.5em;
+    transition: 0.2s background-color;
+}
+.item > .header button:hover{
+    background-color: rgb(255, 113, 113);
+    color: white;
+}
+.item >.content{
+    border-top:1px solid rgba(0,0,0,0.2);
+    padding:0.5em;
+    margin-top:0.5em;
+}
+.item >.footer{
+    text-align: right;
+    font-size: 0.5em;
+}
