@@ -10,7 +10,9 @@ app.use(parser.json())
 app.get('/',(req,res)=>{
     res.sendFile('index.html');
 })
-
+app.post('/login_check',(req, res)=>{
+    console.log(res.body);
+})
 app.get('/home',(req, res)=>{
     res.sendFile(path.join(__dirname,'public/home.html'))
 })
